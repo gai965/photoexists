@@ -1,0 +1,142 @@
+
+.photo-post-contents{
+  height           : 100vh;
+  width            : 100vw;
+  display          : flex;
+  align-items      : center;
+  flex-direction   : column;
+
+  .photo-post-main{
+    height           : 100%;
+    width            : 70vw;
+    min-width        : 450px;
+    margin-bottom    : 5vh;
+    background-color : white;
+    text-align       : center;
+
+    .post-form{
+      height           : 100%;
+
+      .img-upload{
+        width          : 40vw;
+        margin         : 30px auto;
+        text-align     : left;
+  
+        .preview-text{
+          font-weight  : bold;
+          margin-top   : 4vh;
+        }
+  
+        #img_preview{
+          height       : 35vw;
+          width        : 40vw;
+        }
+      }
+  
+      .new-photos{
+        width          : 40vw;
+        margin         : 30px auto;
+        text-align     : left;
+        
+        .photo-text{
+          width        : 100%;
+          border-radius: 4px;
+          border       : 1px solid #ccc;
+          font-size    : 16px;
+          resize       : none;
+        }
+  
+        .photo-explain{
+          margin-top   : 20px;
+        }
+      }
+  
+      .gps{
+        width          : 40vw;
+        margin         : 30px auto;
+        text-align     : left;
+  
+        .gps-map{
+          display       : none;
+          margin-bottom : 2vh;
+  
+          .auto-output{
+            background   : gray;
+            margin-left  : 8px;
+            padding      : 3px;
+            border-radius: 2px;
+            color        : #fff;
+            font-size    : 12px;
+            font-weight  : bold;
+          }
+          
+          #mapid{
+            height       : 35vw;
+            width        : 40vw;
+          }
+        }
+  
+        .photo-gps{
+            margin-top: 1vh;
+  
+          .gps-info{
+            width        : 100%;
+            border-radius: 4px;
+            border       : 1px solid #ccc;
+            font-size    : 18px;
+            resize       : none;
+          }
+  
+          .auto-input{
+              background   : gray;
+              margin-left  : 8px;
+              padding      : 3px;
+              border-radius: 2px;
+              color        : #fff;
+              font-size    : 12px;
+              font-weight  : bold;
+          }
+        }
+      }
+      .post-btn-contents{
+        width          : 40vw;
+        margin         : 30px auto;
+        
+        .post-btn{
+          background   : #ea352d;
+          border       : 1px solid #ea352d;
+          color        : #fff;
+          width        : 100%;
+          height       : 50px;
+          font-size    : 26px;
+          margin-bottom: 4vh;
+          box-shadow   : 2px 2px 4px black;
+        }
+        .back-btn {
+          background   : #aaa;
+          border       : 1px solid #aaa;
+          color        : #fff;
+          padding      : 15px 35%;
+          text-decoration: none;
+          box-shadow   : 2px 2px 2px black;
+        }
+      }
+    }
+  }
+}
+
+
+.weight-bold-text{
+  font-weight  : bold; 
+  margin-bottom: 2vh;
+}
+
+.indispensable {
+  background: #ea352d;
+  margin-left: 8px;
+  padding: 3px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}

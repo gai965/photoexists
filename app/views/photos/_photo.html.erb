@@ -1,0 +1,13 @@
+<li class='list'>
+  <%= link_to photo_path(photo.id) do %>
+  <div class='photo-img-content'>
+    <%= image_tag photo.image, class: 'photo-img' %>
+  </div>
+  <div class='photo-info'>
+    <h3 class='photo-title'>
+    <span>タイトル：<%= photo.title %></span>
+    </h3>
+    <%= link_to "投稿者： #{photo.user.nickname}さん", root_path, class: 'contributor'%>
+  </div>
+  <% end %>
+</li>

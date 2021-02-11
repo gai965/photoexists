@@ -1,0 +1,62 @@
+<%= render 'shared/second-header' %>
+
+<div class='btn-list' >
+    <% if user_signed_in? %>
+      <% if current_user.id == @photo.user_id%>
+        <%= link_to '編集', edit_photo_path(@photo.id), method: :get, class: 'edit-btn' %>
+        <span class='or-text'>or</span>
+        <%= link_to '削除', photo_path(@photo.id), method: :delete, class: 'destroy-btn' %>
+      <% end %>
+    <% end %>
+</div>
+
+<div class='photo-show'>
+  <div class='photo-box'>
+    <div class='photo-img-content'>
+     <span class='title'><%= @photo.title %></span>
+      <%= image_tag @photo.image ,class:'photo-box-img' %>
+      <div id='map-display-btn'>
+        <span class='map-display-text'>地図表示</span>
+      </div>
+    </div>
+    <div class='photo-explain-box'>
+      <table class='detail-table'>
+        <tbody>
+          <tr>
+            <th class='detail-photo'>投稿者</th>
+            <td class='detail-value'><%= @photo.user.nickname %></td>
+          </tr>
+          <tr>
+            <th class='detail-photo'>画像の説明</th>
+            <td class='detail-value'><%= @photo.explanation %></td>
+          </tr>
+          <tr>
+            <th class='detail-photo'>GPS情報(緯度)</th>
+            <td class='detail-value'><%= @photo.latitude %> </td>
+            <div id='show-latitude' data=<%= @photo.latitude %>></div>
+          </tr>
+          <tr>
+            <th class='detail-photo'>GPS情報(経度)</th>
+            <td class='detail-value'><%= @photo.longitude %></td>
+            <div id='show-longitude' data=<%= @photo.longitude %>></div>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class='return-contents'>
+      <div id='return-btn'>
+        <span class='return-text'>もどる</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%# モーダル表示 %>
+<div class='modal'>
+  <div class='modal-content'>
+    <%= image_tag 'close-icon.png' ,class:'close-icon-img' %>
+    <div class='modal-map'>
+      <div id='show-map'></div>
+    </div>
+  </div>
+</div>

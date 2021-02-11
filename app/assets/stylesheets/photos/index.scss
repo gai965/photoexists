@@ -1,0 +1,180 @@
+a {
+  text-decoration: none;
+}
+
+.main {
+  background-color: #f5f5f5;
+ 
+  .top-picture{
+    height : 65vh;
+    width  : 100vw;
+    opacity: 0;
+    box-shadow: 0 0 40px gray;
+  }
+
+  .title-contents{
+    width       : 100vw;
+    margin      : 4vh auto;
+    display     : inline-block;
+
+    .title-img{
+      height    : 10vh;
+      width     : 100%;
+      margin-bottom: 2vh;
+      display   : flex;
+      justify-content: center;
+
+      .title-icon{
+        opacity  : 0;
+      }
+    }
+
+    .anime-content{
+      display        : flex;
+      justify-content: center;
+      align-items    : center;
+
+      .sample-icon{
+        height   : 150px;
+        width    : 150px;
+        margin-right: 2vw;
+      }
+      
+      .arrow-anime{
+        position   : relative;
+        margin     : 0 150px;
+
+        .arrow-icon{
+          height   : 90px;
+          width    : 90px;
+          position : absolute; 
+        }
+
+        #arrow1{
+          top      : -40px;
+          left     : -150px;
+          opacity  : 1;
+        }
+        #arrow-red1{
+          top      : -40px;
+          left     : -150px;
+          opacity  : 0;
+        }
+
+        #arrow2{
+          top      : -40px;
+          left     : -40px;
+          opacity  : 1;
+        }
+        #arrow-red2{
+          top      : -40px;
+          left     : -40px;
+          opacity  : 0;
+        }
+
+        #arrow3{
+          top      : -40px;
+          left     : 70px;
+          opacity  : 1;
+        }
+        #arrow-red3{
+          top      : -40px;
+          left     : 70px;
+          opacity  : 0;
+        }
+      }
+      .gps-icon{
+        height     : 150px;
+        width      : 150px;
+        margin-left: 2vw;
+      }
+    }
+  }
+  .photo-contents{
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    align-items     : center;
+    padding         : 10vh 0;
+    background-color: #ffffff;
+
+    .photo-contents-title{
+      font-size    : 5vh;
+      line-height  : 1.4;
+      font-weight  : bold;
+    }
+
+    .photo-lists{
+      width          : 100vw;
+      display        : flex;
+      flex-wrap      : wrap;
+      justify-content: space-around;
+      list-style     : none;
+
+      .list {
+        width           : 37vh;
+        padding         : 1vw;
+        background-color:#f5f5f5;
+        border          : solid;
+        border-color    :#d5d5d5;
+        margin-bottom   : 1vh;
+        opacity         : 0;
+        transform       : translateY(20px);
+        transition      : all 1s;
+        box-shadow      : 10px 10px 15px -10px;
+
+        .photo-img-content{
+          display        : flex;
+          justify-content: center;
+
+          .photo-img {
+            width        : 33vh;
+            height       : 33vh;
+            border       : solid;
+            border-color :#d5d5d5;
+          }
+        }
+        
+        .photo-info{
+          .photo-title{
+            color    : black;
+          }
+
+          .contributor{
+            color: #767474;
+            float: right;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// 「投稿する」アイコン画像
+.photo-post-btn {
+  width: 120px;
+  background: #b1b1b1;
+  text-align: center;
+  border-radius: 50%;
+  bottom: 32px;
+  right: 32px;
+  position: fixed;
+  padding: 15px;
+  text-decoration: none;
+  box-shadow: 0 0 8px black;
+}
+
+.post-btn-text {
+  color: black;
+  display: block;
+  font-size: 18px;
+  font-weight: bold; 
+  margin-bottom: 2px;
+}
+
+.post-btn-icon {
+  width: 60%;
+}

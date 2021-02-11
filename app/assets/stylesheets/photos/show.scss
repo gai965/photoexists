@@ -1,0 +1,183 @@
+
+.btn-list{
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  margin-top     : 2vh;
+
+  .edit-btn{
+    border-radius   : 50px;
+    height          : 50px;
+    width           : 150px;
+    font-size       : 30px ;
+    color           :black;
+    background-color: rgb(36, 220, 214);
+    border          : 2px solid rgb(36, 220, 214);
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    margin-right    : 20px;
+    box-shadow   : 2px 2px 4px gray;
+  }
+  .or-text{
+    font-size       : 40px;
+  }
+
+  .destroy-btn{
+    border-radius   : 50px;
+    height          : 50px;
+    width           : 150px;
+    font-size       : 30px ;
+    color           :black;
+    background-color: rgb(140, 140, 140);
+    border          : 2px solid rgb(140, 140, 140);
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    margin-left     : 20px;
+    box-shadow      : 2px 2px 4px;
+  }
+}
+
+.photo-show {
+  width          : 100vw;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+
+  .photo-box {
+    width           : 70vw;
+    background-color:#f5f5f5;
+    margin          : 5vh 10vw;
+    display         : flex;
+    align-items     : center;
+    flex-direction  : column;
+    border          : solid;
+    border-color    :#d5d5d5;
+    box-shadow      : 0 0 20px gray;
+
+    .photo-img-content{
+      height       : 60vh;
+      width        : 60vw;
+      display      : inline-block;
+      text-align   : center;
+
+      .title{
+        font-size  : 35px;
+        font-weight: bold;
+        line-height: 75px;
+      }
+
+      .photo-box-img {  
+        height     : 50vh;
+        width      : 60vw;
+        margin     : 0 auto;
+        object-fit : contain;
+        filter: drop-shadow(5px 5px 5px gray);
+      }
+    }
+
+    #map-display-btn{
+      width        : 120px;
+      background   : #dbee07;
+      text-align   : center;
+      border-radius: 50%;
+      border       : 2px solid rgb(140, 140, 140);
+      padding      : 10px;
+      margin       : 0 0 0 auto;
+      box-shadow   : 2px 2px 4px gray;
+      
+      .map-display-text{
+        color      : black;
+        display    : block;
+        font-size  : 20px;
+        font-weight: bold; 
+      }
+    }
+
+    .photo-explain-box{
+      width        : 100%;
+      margin       : 5vh 0 1vh 0;
+
+      .detail-table {
+        width      : 100%;
+        
+        .detail-photo {
+          width           : 30%;
+          background-color: rgb(211, 211, 211);
+          border          : 1px solid #dedede;
+          font-size       : 16px;
+          text-align      : center;
+        }
+
+        .detail-value {
+          width           : 70%;
+          padding         : 20px;
+          font-size       : 16px;
+          font-weight     : bold;
+          background-color: #ffffff;
+          border          : 1px solid #dedede;
+        }
+      }
+    }
+    .return-contents{
+
+      #return-btn{
+        height    : 45px;
+        width     : 300px;
+        background: #f2a83a;
+        margin    : 10px auto;
+        text-align: center;
+        box-shadow   : 2px 2px 4px gray;
+
+        .return-text{
+          color      : black;
+          font-size  : 20px;
+          font-weight: bold; 
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  position        : fixed;
+  height          : 100%;
+  width           : 100%;
+  left            : 0;
+  top             : 0;
+  background-color: rgba(0,0,0,0.5);
+  display         : none;
+  z-index         : 1;
+
+  .modal-content{
+    position        : absolute;
+    height          : 70%;
+    width           : 80%;
+    top             : 15%;
+    left            : 10%;
+
+    .close-icon-img{
+      height          : 25px;
+      width           : 25px;
+      background-color: white;
+    }
+
+    .modal-map{
+      position        : absolute;
+      height          : 100%;
+      width           : 100%;
+      background-color: white;
+      border          : 2px solid #d5d5d5;
+
+      #show-map{
+        position      : absolute;
+        height        : 98%;
+        width         : 98%;
+        top           : 1%;
+        left          : 1%;
+        border        : 3px solid #d5d5d5;
+      }
+    }
+  }
+}

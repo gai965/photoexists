@@ -1,0 +1,73 @@
+  <%= render 'shared/second-header' %> 
+
+<div class='photo-post-contents'>
+  <div class='photo-post-main'>
+    <h2 class='photo-post-title'>投稿写真情報を入力</h2>
+    <div class='post-form'>
+      <%= form_with model: @photo, id:'form', local: true do |f| %>
+
+      <div class='img-upload'>
+        <div class='weight-bold-text'>
+          投稿写真
+          <span class='indispensable'>必須</span>
+        </div>
+        <div class='click-upload'>
+          <p>
+          クリックしてファイルをアップロード
+          </p>
+          <%= f.file_field :image, id:'img' %>
+        </div>
+        <div class='preview'></div> 
+      </div>
+      <div class='new-photos'>
+        <div class='weight-bold-text'>
+          画像タイトル
+          <span class='indispensable'>必須</span>
+        </div>
+        <%= f.text_area :title, class:'photo-text', id:'photo-title', placeholder:'最大40文字まで', maxlength:'40' %>
+        <div class='photo-explain'>
+          <div class='weight-bold-text'>
+            画像の説明
+            <span class='voluntary'>任意</span>
+          </div>
+          <%= f.text_area :explanation, class:'photo-text', id:'photo-info', placeholder:'最大 1,000文字まで' ,rows:'7' ,maxlength:'1000' %>
+        </div>
+      </div>
+
+      <div class='gps'>
+        <div class='gps-map'>
+          <div class='weight-bold-text'>
+            撮影地点
+            <span class='auto-output'>自動検出</span>
+          </div>
+          <div id='mapid'></div>
+        </div>
+        <div class='photo-gps'>
+          <div class='weight-bold-text'>
+            GPS情報(緯度)
+            <span class='auto-input'>自動入力</span>
+          </div>
+          <%= f.text_area :latitude, class:'gps-info', id:'gps-latitude', size:'1x1'%>
+        </div>
+        <div class='photo-gps'>
+          <div class='weight-bold-text'>
+            GPS情報(経度)
+            <span class='auto-input'>自動入力</span>
+          </div>
+          <%= f.text_area :longitude, class:'gps-info', id:'gps-longitude', size:'1x1'%>
+        </div>
+      </div>
+
+      <div class='post-btn-contents'>
+        <% if action_name == 'new'||action_name == 'create' %>
+          <%= f.submit '投稿する' ,class:'post-btn' %>
+          <%=link_to 'もどる', root_path, class:'back-btn' %>
+        <% elsif action_name == 'edit' %>
+          <%= f.submit '変更する' ,class:'post-btn' %>
+          <%=link_to 'もどる', photo_path(@photo.id), class:'back-btn' %>
+        <% end %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

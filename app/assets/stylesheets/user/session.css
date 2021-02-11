@@ -1,0 +1,14 @@
+.session-main {
+  width: 100%;
+  min-width: 800px;
+  height: 100vh;
+  background-color:  #f5f5f5; 
+  display: flex;
+  justify-content: center;
+} 
+
+.form_wrap_session {
+  width: 50%;
+  background-color: white;
+  margin-bottom: 40vh;
+}

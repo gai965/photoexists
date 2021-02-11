@@ -1,0 +1,11 @@
+<% if page.current? %>
+  <li class='active'>
+    <div class='active_circle'>
+      <%= content_tag :a, page, data: { remote: remote }, rel: page.rel %>
+    </div>
+  </li>
+<% else %>
+  <li>
+    <%= link_to page, url, remote: remote, rel: page.rel %>
+  </li>
+<% end %>
