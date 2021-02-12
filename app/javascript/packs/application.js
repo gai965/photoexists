@@ -11,7 +11,7 @@ require("../jquery.exif")
 require("../leaflet")
 require("../gps")
 require("../preview")
-// require("../anime")
+require("../anime")
 require("../show_map")
 
 // Uncomment to copy all static images under ../images to the output folder and reference
