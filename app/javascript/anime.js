@@ -1,6 +1,6 @@
 
 $(window).on('load', function() {
-  if(document.URL.match("localhost:3000")){
+  if(document.URL.match("http://www.photoexists.net/")){
        
     $('.top-picture').stop().animate({opacity:'1'},3000);
     $('.title-icon').stop().animate({opacity:'1'},3000);
