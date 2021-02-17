@@ -10,12 +10,12 @@
 ## 本番環境
  [PhotoExists](http://www.photoexists.net/)
 
- ・test account1
-  メールアドレス:test@test.com
+ ・test account1<br>
+  メールアドレス:test@test.com<br>
   パスワード   :111iti
 
-  ・test account2
-  メールアドレス:test2@test.com
+  ・test account2<br>
+  メールアドレス:test2@test.com<br>
   パスワード   :2222ni
 
 ## 使用方法
