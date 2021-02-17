@@ -44,7 +44,7 @@
   4. 画像タイトルの入力(必須)
   5. 「投稿する」ボタンをクリック
 
-![Demo](https://user-images.githubusercontent.com/72908323/108185905-23fc6d00-7150-11eb-8593-fc08f1bbd0aa.gif)
+![Demo1](https://user-images.githubusercontent.com/72908323/108185905-23fc6d00-7150-11eb-8593-fc08f1bbd0aa.gif)
 
 ### 投稿画像閲覧
   1. Top画面の投稿画像をクリック<br>
