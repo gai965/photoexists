@@ -27,6 +27,11 @@
  - JavaScript
    - jQuery
  - GitHub
+ - AWS
+   - EC2
+   - S3
+   - Route 53
+ - VSCode
 
 
 # 使用方法
