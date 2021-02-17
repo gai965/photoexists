@@ -12,11 +12,11 @@
  [PhotoExists](http://www.photoexists.net/)<br>
   (http://www.photoexists.net/)
 
- ・test account1<br>
+ - test account1<br>
   メールアドレス:test@test.com<br>
   パスワード   :111iti
 
-  ・test account2<br>
+ - test account2<br>
   メールアドレス:test2@test.com<br>
   パスワード   :2222ni
 
@@ -26,7 +26,7 @@
  - Rails 6.0.3.4
  - JavaScript
    - jQuery
- -  
+ - GitHub
 
 
 # 使用方法
