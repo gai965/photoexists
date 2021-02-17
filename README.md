@@ -58,7 +58,7 @@
   ![Demo2](https://user-images.githubusercontent.com/72908323/108186532-d16f8080-7150-11eb-8097-574a682d3795.gif)
 
 
-# テーブル設計
+# DB設計
 
 ## usersテーブル
 
@@ -72,7 +72,7 @@
 - has_many :photos
 
 
-# photosテーブル
+## photosテーブル
 
 | Column                  | Type        | Options                             |
 | ----------------------- | ----------- | ----------------------------------- |
