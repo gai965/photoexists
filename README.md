@@ -4,6 +4,8 @@
  ### **PhotoExists**
  ![世界地図完成](https://user-images.githubusercontent.com/72908323/108178719-1b079d80-7148-11eb-9765-728befb67390.jpg)
 
+
+![gyazo com:398455572f7cf48ff741a00b51cc7fa4](https://user-images.githubusercontent.com/72908323/108184767-eba85f00-714e-11eb-9d88-caeb5e339c89.gif)
 # アプリケーション概要
 ・画像の投稿と撮影地点が地図上で表示できるアプリケーション<br>
 投稿した画像にExif情報が存在すれば、その情報からGPS情報を取得して撮影した位置情報を地図上で表示することができる
