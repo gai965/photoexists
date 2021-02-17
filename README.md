@@ -8,8 +8,8 @@
 投稿した画像にExif情報が存在すれば、その情報からGPS情報を取得して撮影した位置情報を地図上で表示することができる
 
 ## 本番環境
- [PhotoExists](http://www.photoexists.net/)
-  http://www.photoexists.net/
+ [PhotoExists](http://www.photoexists.net/)<br>
+  (http://www.photoexists.net/)
 
  ・test account1<br>
   メールアドレス:test@test.com<br>
