@@ -2,6 +2,7 @@
 
 # アプリケーション名
  ### **PhotoExists**
+ <span style="color: red; ">赤文字</span>
  ![世界地図完成](https://user-images.githubusercontent.com/72908323/108178719-1b079d80-7148-11eb-9765-728befb67390.jpg)
 
 # アプリケーション概要
